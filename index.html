@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braich Wholesale - Premier Distribution Solutions</title>
+    <meta name="description" content="Braich Wholesale - Your trusted source for grocery and gourmet foods. Pennsylvania's leading distribution company offering top brands and exceptional service.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2><a href="index.html">BRAICH WHOLESALE</a></h2>
+            </div>
+            <nav>
+                <ul class="nav-links1">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav-links2">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="image.png" alt="Braich Wholesale Warehouse - State-of-the-art facility">
+            </div>
+            <div class="hero-text">
+                <h2>Enhancing<br>Wholesale Solutions</h2>
+                <p>Welcome to Braich Wholesale — your trusted source for grocery and gourmet foods. As Pennsylvania's leading distribution company, we proudly offer top brands like Ricola, Frito-Lay, Huy Fong, Butler Foods, Kellogg's, and many more. Our strong partnerships with vendors enable us to deliver exceptional customer service and highly competitive pricing, keeping us a step ahead of the competition.</p>
+                <a href="about.html" class="btn">Learn More About Us</a>
+            </div>
+        </section>
+
+        <section class="who-we-serve">
+            <div class="container">
+                <h2>WHO WE SERVE</h2>
+                <div class="serve-columns">
+                    <div class="serve-column">
+                        <img src="independent-retailers.jpg" alt="Independent Retailers - Fully stocked refrigerated section">
+                        <p>INDEPENDENT RETAILERS</p>
+                    </div>
+                    <div class="serve-column">
+                        <img src="food-service.jpg" alt="Food Service - Professional chefs preparing orders">
+                        <p>FOOD SERVICE</p>
+                    </div>
+                    <div class="serve-column">
+                        <img src="c-stores.jpg" alt="Convenience Stores - Modern retail display">
+                        <p>C-STORES</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr class="footer-separator">
+            <div class="footer-content">
+                <div class="footer-address">
+                    <p><strong>Braich Wholesale Distribution</strong></p>
+                    <p>1400 W Front St Suite 100</p>
+                    <p>Florence, NJ 08518</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="brands.html">BRANDS</a></li>
+                        <li><a href="terms_of_use.html">TERMS OF USE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Braich Wholesale. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links2');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.contact-container {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-layout {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    position: relative;
+}
+
+.contact-layout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #000 0%, #333 100%);
+    border-radius: 12px 12px 0 0;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-section h1 {
+    font-size: 3rem;
+    margin-bottom: 2.5rem;
+    color: #1a1a1a;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.header-section h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #000;
+}
+
+.header-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+    color: #444;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.business-info-column,
+.inquiries-info-column {
+    flex: 1;
+    min-width: 250px;
+    padding: 25px;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+.business-info-column h2,
+.inquiries-info-column h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.business-info-column h2::after,
+.inquiries-info-column h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #000;
+}
+
+.business-info-column p,
+.inquiries-info-column p {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.contact-form-column {
+    flex: 1.5;
+    min-width: 300px;
+    padding: 25px;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    display: block;
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.name-fields {
+    display: flex;
+    gap: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #000;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+input[name="firstname"],
+input[name="lastname"] {
+    width: calc(50% - 0.5rem);
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+    width: auto;
+    align-self: flex-start;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+    transform: translateY(-1px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px 10px;
+    }
+
+    .contact-layout {
+        padding: 25px;
+    }
+
+    .header-section {
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+
+    .header-section h1 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .header-section p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: left;
+        padding: 0 0.5rem;
+    }
+
+    .content-row {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .business-info-column,
+    .inquiries-info-column {
+        width: 100%;
+        min-width: unset;
+        padding: 20px;
+    }
+
+    .name-fields {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    input[name="firstname"],
+    input[name="lastname"] {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .business-info-column p,
+    .inquiries-info-column p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    label,
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    input[type="submit"] {
+        font-size: 1.1rem;
+    }
+}

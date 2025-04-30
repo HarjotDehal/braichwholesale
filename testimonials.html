@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Braich Wholesale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="testimonials.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2><a href="index.html">BRAICH WHOLESALE</a></h2>
+            </div>
+            <nav>
+                <ul class="nav-links1">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav-links2">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Testimonials</h1>
+        <div class="testimonials-container">
+            <blockquote>
+                <p>"Working with Braich Wholesale has been a game-changer for our business. The quality of their products is top-notch, and their customer service is unmatched. The 25% margins they guarantee have significantly improved our profitability. We couldn't be happier with our partnership!"</p>
+                <cite>— Sarah Thompson.</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Braich Wholesale has exceeded our expectations in every way. Their efficient ordering process and timely deliveries have streamlined our operations. The team is always available to answer our questions and provide support. Highly recommended for any business looking for a reliable wholesale distributor!"</p>
+                <cite>— James Anderson</cite>
+            </blockquote>
+            <blockquote>
+                <p>"We have been sourcing our products from Braich Wholesale for over a year now, and the experience has been fantastic. The guaranteed margins and competitive pricing have allowed us to grow our business rapidly. Their dedication to quality and customer satisfaction is truly impressive."</p>
+                <cite>— David Lee</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Choosing Braich Wholesale as our wholesale distributor was one of the best decisions we've made. The seamless ordering process, excellent product range, and guaranteed margins have been a huge boost for our business. The team's dedication to customer success is evident in every interaction."</p>
+                <cite>— Laura Patel</cite>
+            </blockquote>
+        </div>
+    </main>
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links2');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+
+    <!-- Adding the standard footer -->
+    <footer>
+        <div class="container">
+            <hr class="footer-separator">
+            <div class="footer-content">
+                <div class="footer-address">
+                    <p><strong>Braich Wholesale Distribution</strong></p>
+                    <p>1400 W Front St Suite 100</p>
+                    <p>Florence, NJ 08518</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="brands.html">BRANDS</a></li>
+                        <li><a href="terms_of_use.html">TERMS OF USE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Braich Wholesale. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

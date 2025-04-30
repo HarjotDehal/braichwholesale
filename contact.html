@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Braich Wholesale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2><a href="index.html">BRAICH WHOLESALE</a></h2>
+            </div>
+            <nav>
+                <ul class="nav-links1">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav-links2">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="contact-layout">
+                <div class="header-section">
+                    <h1>Connect With Us</h1>
+                    <p style="text-align: left;">We do not open accounts for online or e-commerce retailers. Braich Wholesale holds exclusive rights to distribute certain brands that have chosen not to appear on third-party marketplaces, including but not limited to Amazon. Our priority is to protect the integrity of these brands and prevent unauthorized or illegal redistribution. Failure to comply with these policies will result in immediate termination of your account.</p>
+                    <!-- <p style="text-align: left;">Email: <a href="mailto:Sales@braichwholesale.com">Sales@braichwholesale.com</a></p> -->
+                    <p style="text-align: left;">Please see the <a href="terms_of_use.html">Terms of Use</a> for more information.</p>
+                </div>
+                
+                <div class="content-row">
+                    <div class="business-info-column">
+                        <h2>Business hours</h2>
+                        <p>Monday - Friday : 8AM - 5PM</p>
+                        <p>1400 W Front St Suite 100</p>
+                        <p>Florence, NJ 08518</p>
+                    </div>
+                    <div class="inquiries-info-column">
+                        <h2>For Inquiries:</h2>
+                        <p>Please contact us via phone or email:</p>
+                        <p>Phone: <a href="tel:+16107308668">(610) 730-8668</a></p> 
+                        <p>Email: <a href="mailto:Sales@braichwholesale.com">Sales@braichwholesale.com</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links2');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+    <!-- Adding the standard footer -->
+    <footer>
+        <div class="container">
+            <hr class="footer-separator">
+            <div class="footer-content">
+                <div class="footer-address">
+                    <p><strong>Braich Wholesale Distribution</strong></p>
+                    <p>1400 W Front St Suite 100</p>
+                    <p>Florence, NJ 08518</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="brands.html">BRANDS</a></li>
+                        <li><a href="terms_of_use.html">TERMS OF USE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Braich Wholesale. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

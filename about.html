@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Braich Wholesale</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2><a href="index.html">BRAICH WHOLESALE</a></h2>
+            </div>
+            <nav>
+                <ul class="nav-links1">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav-links2">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="about-content">
+            <h1>About us</h1>
+            <p>Braich Wholesale is a premier full-service wholesaler, proudly serving value, discount, convenience, distribution, and grocery sectors. We have been a trusted foundation for our customers, delivering unmatched variety, value, and service — all within the convenience of a one-stop shopping experience.</p>
+            <p>We offer fast turnaround times, same-day pickup, free loading, and customized consolidated services tailored to meet your needs.</p>
+            <img src="about.png" alt="About Braich Wholesale" class="about-image">
+        </div>
+    </main>
+    <script>
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links2');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+    <!-- Adding the standard footer -->
+    <footer>
+        <div class="container">
+            <hr class="footer-separator">
+            <div class="footer-content">
+                <div class="footer-address">
+                    <p><strong>Braich Wholesale Distribution</strong></p>
+                    <p>1400 W Front St Suite 100</p>
+                    <p>Florence, NJ 08518</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="brands.html">BRANDS</a></li>
+                        <li><a href="terms_of_use.html">TERMS OF USE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Braich Wholesale. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

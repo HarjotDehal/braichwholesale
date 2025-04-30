@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands - Braich Wholesale</title>
+    <link rel="stylesheet" href="style.css"> <!-- Main stylesheet -->
+    <link rel="stylesheet" href="brands.css"> <!-- Brands specific stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2><a href="index.html">BRAICH WHOLESALE</a></h2>
+            </div>
+            <nav>
+                <!-- Reusing the same nav structure -->
+                <ul class="nav-links1">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul class="nav-links2">
+                     <li><a href="about.html">About</a></li>
+                    <li><a href="brands.html">Brands</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="brands-hero">
+            <div class="container">
+                <h1>BRANDS</h1>
+                <div class="title-underline"></div>
+            </div>
+        </section>
+
+        <section class="brands-showcase">
+            <div class="container">
+                <div class="brands-grid">
+                    <div class="brand-logo"><img src="brands/Nestle.png" alt="Nestle"></div>
+                    <div class="brand-logo"><img src="brands/Chiquita.png" alt="Chiquita"></div>
+                    <div class="brand-logo"><img src="brands/Ricola.png" alt="Ricola"></div>
+                    <div class="brand-logo"><img src="brands/Knorr.png" alt="Knorr"></div>
+                    <div class="brand-logo"><img src="brands/GeneralMills.png" alt="General Mills"></div>
+                    <div class="brand-logo"><img src="brands/Maruchan.jpg" alt="Maruchan"></div>
+                    <div class="brand-logo"><img src="brands/Nescafe.jpg" alt="Nescafe"></div>
+                    <div class="brand-logo"><img src="brands/Giradelli.png" alt="Ghirardelli"></div> <!-- Corrected spelling? -->
+                    <div class="brand-logo"><img src="brands/Heinz.png" alt="Heinz"></div>
+                    <div class="brand-logo"><img src="brands/McCormick.png" alt="McCormick"></div>
+                    <div class="brand-logo"><img src="brands/Kellogg.png" alt="Kellogg's"></div> <!-- Corrected spelling? -->
+                    <div class="brand-logo"><img src="brands/FritoLay.png" alt="Frito-Lay"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Reusing the same footer structure -->
+    <footer>
+        <div class="container">
+            <hr class="footer-separator">
+            <div class="footer-content">
+                <div class="footer-address">
+                    <p><strong>Braich Wholesale Distribution</strong></p>
+                    <p>1400 W Front St Suite 100</p>
+                    <p>Florence, NJ 08518</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="brands.html">BRANDS</a></li>
+                        <li><a href="terms_of_use.html">TERMS OF USE</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 Braich Wholesale. ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Reusing the same burger menu script
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links2');
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html> 
